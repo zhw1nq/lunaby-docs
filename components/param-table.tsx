@@ -31,7 +31,7 @@ export function ParamTable({ params }: { params: Param[] }) {
                                 </div>
                             </td>
                             <td className="px-4 py-3 align-top">
-                                <code className="text-xs text-violet-500 dark:text-violet-400 font-mono">{p.type}</code>
+                                <code className="text-xs text-cyan-500 dark:text-cyan-400 font-mono">{p.type}</code>
                             </td>
                             <td className="px-4 py-3 align-top text-xs text-muted-foreground leading-relaxed">
                                 {p.description}

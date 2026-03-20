@@ -4,7 +4,7 @@ import { EndpointBadge } from "@/components/endpoint-badge";
 export default function StreamingPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 mb-2">Core API</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Core API</p>
             <h1>Streaming</h1>
             <p>
                 Khi <code>stream: true</code>, server gửi response dưới dạng <strong>Server-Sent Events (SSE)</strong>.

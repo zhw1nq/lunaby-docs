@@ -14,7 +14,7 @@ const CLIENT_OPTIONS = [
 export default function SDKReferencePage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 mb-2">SDK Reference</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">SDK Reference</p>
             <h1>SDK Overview</h1>
             <p>
                 <code>lunaby-sdk</code> là TypeScript-first SDK với full type definitions, ESM + CJS support,

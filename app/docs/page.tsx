@@ -3,7 +3,7 @@ import { CodeBlock } from "@/components/code-block";
 export default function DocsPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 mb-2">Overview</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Overview</p>
             <h1>Introduction</h1>
             <p>
                 Lunaby API là REST API proxy kết nối tới các model AI, hỗ trợ chat completions,
@@ -26,8 +26,8 @@ export default function DocsPage() {
                     { title: "SDK Reference", desc: "Full TypeScript SDK docs", href: "/docs/sdk-reference" },
                 ].map((card) => (
                     <a key={card.href} href={card.href}
-                        className="block p-4 rounded-lg border hover:border-violet-300 hover:bg-violet-50/50 dark:hover:bg-violet-950/20 transition-all group">
-                        <p className="font-semibold text-sm group-hover:text-violet-700 dark:group-hover:text-violet-300 transition-colors">{card.title} →</p>
+                        className="block p-4 rounded-lg border hover:border-cyan-300 hover:bg-cyan-50/50 dark:hover:bg-cyan-950/20 transition-all group">
+                        <p className="font-semibold text-sm group-hover:text-cyan-700 dark:group-hover:text-cyan-300 transition-colors">{card.title} →</p>
                         <p className="text-xs text-muted-foreground mt-1">{card.desc}</p>
                     </a>
                 ))}

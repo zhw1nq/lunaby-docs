@@ -18,7 +18,7 @@ const REQUEST_PARAMS = [
 export default function ChatPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 mb-2">Core API</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Core API</p>
             <h1>Chat Completions</h1>
             <p>
                 Tạo model response từ một đoạn hội thoại. Hỗ trợ cả non-streaming lẫn

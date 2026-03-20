@@ -15,7 +15,7 @@ const ERRORS = [
 export default function ErrorsPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 mb-2">SDK Reference</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">SDK Reference</p>
             <h1>Error Handling</h1>
             <p>
                 SDK export đầy đủ error classes. Dùng <code>instanceof</code> để xử lý từng loại lỗi.
@@ -35,7 +35,7 @@ export default function ErrorsPage() {
                     <tbody className="divide-y">
                         {ERRORS.map((e) => (
                             <tr key={e.name} className="hover:bg-muted/40">
-                                <td className="px-4 py-3 font-mono text-xs font-semibold text-violet-600 dark:text-violet-400">{e.name}</td>
+                                <td className="px-4 py-3 font-mono text-xs font-semibold text-cyan-600 dark:text-cyan-400">{e.name}</td>
                                 <td className="px-4 py-3 text-xs text-muted-foreground font-mono">{e.code ?? "-"}</td>
                                 <td className="px-4 py-3 text-xs text-muted-foreground">{e.desc}</td>
                             </tr>

@@ -14,7 +14,7 @@ const IMAGE_PARAMS = [
 export default function ImagesPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 mb-2">Core API</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Core API</p>
             <h1>Image Generation</h1>
             <p>
                 Sinh ảnh từ text prompt. Lunaby API tự động <strong>enhance prompt</strong> trước khi

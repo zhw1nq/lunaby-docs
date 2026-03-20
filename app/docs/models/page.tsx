@@ -5,7 +5,7 @@ const MODELS = [
         id: "lunaby",
         label: "Lunaby",
         tag: "Default",
-        tagColor: "violet",
+        tagColor: "cyan",
         desc: "Model mặc định cho chat tổng quát. Cân bằng tốt giữa tốc độ và chất lượng.",
         useCase: "Chatbot, Q&A, summarization, translation",
     },
@@ -28,7 +28,7 @@ const MODELS = [
 ];
 
 const TAG_COLORS: Record<string, string> = {
-    violet: "bg-violet-100 text-violet-700 dark:bg-violet-950 dark:text-violet-300",
+    cyan: "bg-cyan-100 text-cyan-700 dark:bg-cyan-950 dark:text-cyan-300",
     blue: "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300",
     pink: "bg-pink-100 text-pink-700 dark:bg-pink-950 dark:text-pink-300",
 };
@@ -36,13 +36,13 @@ const TAG_COLORS: Record<string, string> = {
 export default function ModelsPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 mb-2">Core API</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Core API</p>
             <h1>Models</h1>
             <p>Lunaby API cung cấp 3 models. Dùng <code>model</code> parameter để chọn.</p>
 
             <div className="not-prose space-y-3 my-6">
                 {MODELS.map((m) => (
-                    <div key={m.id} className="rounded-lg border p-4 hover:border-violet-300 transition-colors">
+                    <div key={m.id} className="rounded-lg border p-4 hover:border-cyan-300 transition-colors">
                         <div className="flex items-start justify-between">
                             <div>
                                 <div className="flex items-center gap-2 mb-1">

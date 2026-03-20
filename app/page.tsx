@@ -3,11 +3,13 @@ import { HeroCodeBlock } from "@/components/hero-code-block";
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-gradient-to-b from-violet-50 to-white dark:from-violet-950/20 dark:to-background flex flex-col items-center justify-center px-6">
+        <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white dark:from-cyan-950/20 dark:to-background flex flex-col items-center justify-center px-6">
             <div className="max-w-2xl text-center space-y-6">
-                <div className="inline-flex size-16 rounded-2xl bg-violet-600 items-center justify-center mx-auto">
-                    <span className="text-white text-2xl font-bold">L</span>
-                </div>
+                <img
+                    src="https://github.com/lun4by/Lunaby/blob/main/assets/avatar.png?raw=true"
+                    alt="Lunaby Logo"
+                    className="size-16 mx-auto rounded-2xl object-cover shadow-sm"
+                />
                 <h1 className="text-5xl font-bold tracking-tight">Lunaby API</h1>
                 <p className="text-lg text-muted-foreground">
                     Developer documentation - Chat completions, image generation,<br />
@@ -15,7 +17,7 @@ export default function Home() {
                 </p>
                 <div className="flex items-center gap-3 justify-center pt-2">
                     <Link href="/docs/quickstart"
-                        className="bg-violet-600 hover:bg-violet-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors text-sm">
+                        className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors text-sm">
                         Get Started
                     </Link>
                     <Link href="/docs"

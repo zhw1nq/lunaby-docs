@@ -3,7 +3,7 @@ import { CodeBlock } from "@/components/code-block";
 export default function AuthenticationPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 mb-2">Getting Started</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Getting Started</p>
             <h1>Authentication</h1>
             <p>
                 Lunaby API dùng <strong>Bearer Token</strong> để xác thực. Mọi request tới{" "}

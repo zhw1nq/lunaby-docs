@@ -24,7 +24,12 @@ export default async function DocsLayout({ children }: { children: React.ReactNo
             <header className="sticky top-0 z-50 h-16 border-b bg-background/95 backdrop-blur">
                 <div className="max-w-[1400px] mx-auto px-6 h-full flex items-center relative">
                     {/* Left: Logo */}
-                    <Link href="/" className="flex items-center gap-2 absolute left-6">
+                    <Link href="/" className="flex items-center gap-2 absolute left-6 hover:opacity-80 transition-opacity">
+                        <img
+                            src="https://github.com/lun4by/Lunaby/blob/main/assets/avatar.png?raw=true"
+                            alt="Lunaby Logo"
+                            className="size-7 rounded-md object-cover shadow-sm"
+                        />
                         <span className="font-semibold text-lg tracking-tight">Lunaby Developers</span>
                     </Link>
 
@@ -43,7 +48,7 @@ export default async function DocsLayout({ children }: { children: React.ReactNo
                         <Link
                             href="https://api.lunie.dev"
                             target="_blank"
-                            className="flex items-center gap-1.5 text-xs bg-zinc-950 hover:bg-zinc-800 text-zinc-50 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200 px-4 py-1.5 rounded-full transition-colors font-medium shadow-sm"
+                            className="flex items-center gap-1.5 text-xs bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-1.5 rounded-full transition-colors font-medium shadow-sm"
                         >
                             Dashboard <ArrowUpRight className="size-3.5" />
                         </Link>

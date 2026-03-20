@@ -3,14 +3,14 @@ import { CodeBlock } from "@/components/code-block";
 export default function QuickstartPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 mb-2">Getting Started</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Getting Started</p>
             <h1>Quick Start</h1>
             <p>Gửi request đầu tiên tới Lunaby API trong vài phút.</p>
 
             <h2>Bước 1 - Lấy API Key</h2>
             <p>
                 Đăng nhập vào{" "}
-                <a href="https://api.lunie.dev" target="_blank" className="text-violet-600 underline">
+                <a href="https://api.lunie.dev" target="_blank" className="text-cyan-600 underline">
                     Lunaby Dashboard
                 </a>{" "}
                 → Admin Panel → Tạo API key mới. Key chỉ hiển thị một lần, hãy lưu lại ngay.
