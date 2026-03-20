@@ -1,11 +1,11 @@
 import { CodeBlock } from "@/components/code-block";
 import { EndpointBadge } from "@/components/endpoint-badge";
+import { DocsHeader } from "@/components/docs-header";
 
 export default function StreamingPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Core API</p>
-            <h1>Streaming</h1>
+            <DocsHeader section="Core API" title="Streaming" />
             <p>
                 Khi <code>stream: true</code>, server gửi response dưới dạng <strong>Server-Sent Events (SSE)</strong>.
                 SDK cung cấp 3 cách xử lý stream.

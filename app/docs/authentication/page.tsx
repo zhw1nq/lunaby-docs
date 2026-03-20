@@ -1,10 +1,10 @@
 import { CodeBlock } from "@/components/code-block";
+import { DocsHeader } from "@/components/docs-header";
 
 export default function AuthenticationPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Getting Started</p>
-            <h1>Authentication</h1>
+            <DocsHeader section="Getting Started" title="Authentication" />
             <p>
                 Lunaby API dùng <strong>Bearer Token</strong> để xác thực. Mọi request tới{" "}
                 <code>/v1/</code> đều phải có header <code>Authorization</code>.

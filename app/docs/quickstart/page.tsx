@@ -1,10 +1,10 @@
 import { CodeBlock } from "@/components/code-block";
+import { DocsHeader } from "@/components/docs-header";
 
 export default function QuickstartPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Getting Started</p>
-            <h1>Quick Start</h1>
+            <DocsHeader section="Getting Started" title="Quick Start" />
             <p>Gửi request đầu tiên tới Lunaby API trong vài phút.</p>
 
             <h2>Bước 1 - Lấy API Key</h2>

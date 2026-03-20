@@ -1,6 +1,7 @@
 import { CodeBlock } from "@/components/code-block";
 import { ParamTable } from "@/components/param-table";
 import { EndpointBadge } from "@/components/endpoint-badge";
+import { DocsHeader } from "@/components/docs-header";
 
 const IMAGE_PARAMS = [
     { name: "prompt", type: "string", required: true, description: "Mô tả ảnh cần tạo. Prompt được tự động enhance trước khi gửi đến model." },
@@ -14,8 +15,7 @@ const IMAGE_PARAMS = [
 export default function ImagesPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Core API</p>
-            <h1>Image Generation</h1>
+            <DocsHeader section="Core API" title="Image Generation" />
             <p>
                 Sinh ảnh từ text prompt. Lunaby API tự động <strong>enhance prompt</strong> trước khi
                 gửi tới model để cho kết quả tốt nhất. Content bị blacklist sẽ bị từ chối.

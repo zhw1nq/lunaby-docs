@@ -12,11 +12,12 @@ const ERRORS = [
     { name: "APIError", code: null, desc: "Các lỗi HTTP khác (400, 403, 404, 500...)." },
 ];
 
+import { DocsHeader } from "@/components/docs-header";
+
 export default function ErrorsPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">SDK Reference</p>
-            <h1>Error Handling</h1>
+            <DocsHeader section="SDK Reference" title="Error Handling" />
             <p>
                 SDK export đầy đủ error classes. Dùng <code>instanceof</code> để xử lý từng loại lỗi.
                 SDK tự động retry với exponential backoff cho các lỗi <code>408, 429, 500–504</code>.

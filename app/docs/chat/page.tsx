@@ -1,6 +1,7 @@
 import { CodeBlock } from "@/components/code-block";
 import { ParamTable } from "@/components/param-table";
 import { EndpointBadge } from "@/components/endpoint-badge";
+import { DocsHeader } from "@/components/docs-header";
 
 const REQUEST_PARAMS = [
     { name: "messages", type: "ChatMessage[]", required: true, description: "Mảng messages. Mỗi item có role ('system' | 'user' | 'assistant') và content (string)." },
@@ -18,8 +19,7 @@ const REQUEST_PARAMS = [
 export default function ChatPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Core API</p>
-            <h1>Chat Completions</h1>
+            <DocsHeader section="Core API" title="Chat Completions" />
             <p>
                 Tạo model response từ một đoạn hội thoại. Hỗ trợ cả non-streaming lẫn
                 streaming (SSE). Yêu cầu xác thực bằng API key.

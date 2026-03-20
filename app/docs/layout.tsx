@@ -1,5 +1,6 @@
 import { DocsSidebar } from "@/components/docs-sidebar";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { TableOfContents } from "@/components/toc";
@@ -25,9 +26,11 @@ export default async function DocsLayout({ children }: { children: React.ReactNo
                 <div className="max-w-[1400px] mx-auto px-6 h-full flex items-center relative">
                     {/* Left: Logo */}
                     <Link href="/" className="flex items-center gap-2 absolute left-6 hover:opacity-80 transition-opacity">
-                        <img
+                        <Image
                             src="https://github.com/lun4by/Lunaby/blob/main/assets/avatar.png?raw=true"
                             alt="Lunaby Logo"
+                            width={28}
+                            height={28}
                             className="size-7 rounded-md object-cover shadow-sm"
                         />
                         <span className="font-semibold text-lg tracking-tight">Lunaby Developers</span>

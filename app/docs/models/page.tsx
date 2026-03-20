@@ -1,4 +1,6 @@
 import { CodeBlock } from "@/components/code-block";
+import { DocsHeader } from "@/components/docs-header";
+import { cn } from "@/lib/utils";
 
 const MODELS = [
     {
@@ -36,8 +38,7 @@ const TAG_COLORS: Record<string, string> = {
 export default function ModelsPage() {
     return (
         <div className="prose">
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-600 mb-2">Core API</p>
-            <h1>Models</h1>
+            <DocsHeader section="Core API" title="Models" />
             <p>Lunaby API cung cấp 3 models. Dùng <code>model</code> parameter để chọn.</p>
 
             <div className="not-prose space-y-3 my-6">
@@ -47,7 +48,7 @@ export default function ModelsPage() {
                             <div>
                                 <div className="flex items-center gap-2 mb-1">
                                     <code className="text-sm font-semibold font-mono">{m.id}</code>
-                                    <span className={`text-[11px] px-2 py-0.5 rounded-full font-medium ${TAG_COLORS[m.tagColor]}`}>
+                                    <span className={cn("text-[11px] px-2 py-0.5 rounded-full font-medium", TAG_COLORS[m.tagColor])}>
                                         {m.tag}
                                     </span>
                                 </div>

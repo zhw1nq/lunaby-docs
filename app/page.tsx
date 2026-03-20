@@ -1,13 +1,16 @@
 import Link from "next/link";
 import { HeroCodeBlock } from "@/components/hero-code-block";
+import Image from "next/image";
 
 export default function Home() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white dark:from-cyan-950/20 dark:to-background flex flex-col items-center justify-center px-6">
             <div className="max-w-2xl text-center space-y-6">
-                <img
+                <Image
                     src="https://github.com/lun4by/Lunaby/blob/main/assets/avatar.png?raw=true"
                     alt="Lunaby Logo"
+                    width={64}
+                    height={64}
                     className="size-16 mx-auto rounded-2xl object-cover shadow-sm"
                 />
                 <h1 className="text-5xl font-bold tracking-tight">Lunaby API</h1>
