@@ -36,7 +36,7 @@ export default function ErrorsPage() {
                         {ERRORS.map((e) => (
                             <tr key={e.name} className="hover:bg-muted/40">
                                 <td className="px-4 py-3 font-mono text-xs font-semibold text-violet-600 dark:text-violet-400">{e.name}</td>
-                                <td className="px-4 py-3 text-xs text-muted-foreground font-mono">{e.code ?? "—"}</td>
+                                <td className="px-4 py-3 text-xs text-muted-foreground font-mono">{e.code ?? "-"}</td>
                                 <td className="px-4 py-3 text-xs text-muted-foreground">{e.desc}</td>
                             </tr>
                         ))}
@@ -77,7 +77,7 @@ try {
     console.error(\`⏳ Rate limited. Thử lại sau \${error.retryAfter}s\`);
 
   } else if (error instanceof TimeoutError) {
-    console.error('⌛ Request timeout — tăng timeout nếu cần');
+    console.error('⌛ Request timeout - tăng timeout nếu cần');
 
   } else if (error instanceof ContentFilterError) {
     console.error('🚫 Nội dung bị lọc:', error.categories);
@@ -109,10 +109,10 @@ try {
                     </thead>
                     <tbody className="divide-y text-xs">
                         {[
-                            ["400", "Bad Request — thiếu field hoặc sai format", "Không"],
-                            ["401", "Unauthorized — API key sai hoặc thiếu", "Không"],
-                            ["403", "Forbidden — Key bị deactivate", "Không"],
-                            ["404", "Not Found — Endpoint không tồn tại", "Không"],
+                            ["400", "Bad Request - thiếu field hoặc sai format", "Không"],
+                            ["401", "Unauthorized - API key sai hoặc thiếu", "Không"],
+                            ["403", "Forbidden - Key bị deactivate", "Không"],
+                            ["404", "Not Found - Endpoint không tồn tại", "Không"],
                             ["408", "Request Timeout", "✓ Auto"],
                             ["429", "Rate Limit Exceeded", "✓ Auto"],
                             ["500", "Internal Server Error", "✓ Auto"],

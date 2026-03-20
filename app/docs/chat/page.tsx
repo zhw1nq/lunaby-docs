@@ -30,7 +30,7 @@ export default function ChatPage() {
             <h2>Request Parameters</h2>
             <ParamTable params={REQUEST_PARAMS} />
 
-            <h2>Ví dụ — Non-streaming</h2>
+            <h2>Ví dụ - Non-streaming</h2>
             <CodeBlock
                 filename="chat.ts"
                 language="typescript"
@@ -51,7 +51,7 @@ console.log(response.data.choices[0].message.content);
 console.log('Tokens:', response.data.usage.total_tokens);`}
             />
 
-            <h2>Ví dụ — cURL</h2>
+            <h2>Ví dụ - cURL</h2>
             <CodeBlock
                 language="bash"
                 code={`curl https://api.lunie.dev/v1/chat/completions \\

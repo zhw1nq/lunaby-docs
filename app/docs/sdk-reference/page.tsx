@@ -56,7 +56,7 @@ res.getRateLimitInfo()  // { limit, remaining, reset }`}
             <h2>client.chat.stream()</h2>
             <CodeBlock
                 language="typescript"
-                code={`// Async generator — cách đơn giản nhất
+                code={`// Async generator - cách đơn giản nhất
 for await (const chunk of client.chat.stream(messages, options)) {
   const content = chunk.choices[0].delta.content;
   if (content) process.stdout.write(content);
@@ -70,7 +70,7 @@ for await (const chunk of client.chat.stream(messages, options)) {
 const stream = await client.chat.createStream(messages, options);
 
 // Properties
-stream.fullContent  // string — accumulated content
+stream.fullContent  // string - accumulated content
 stream.usage        // TokenUsage | undefined
 
 // Methods

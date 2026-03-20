@@ -26,7 +26,7 @@ export default function ImagesPage() {
             <h2>Request Parameters</h2>
             <ParamTable params={IMAGE_PARAMS} />
 
-            <h2>Ví dụ — Lưu file (Node.js)</h2>
+            <h2>Ví dụ - Lưu file (Node.js)</h2>
             <CodeBlock
                 filename="generate-image.ts"
                 language="typescript"
@@ -51,7 +51,7 @@ console.log('Revised prompt:', result.revisedPrompt);
 console.log('Tokens:', result.usage?.total_tokens);`}
             />
 
-            <h2>Ví dụ — Lấy Base64</h2>
+            <h2>Ví dụ - Lấy Base64</h2>
             <CodeBlock
                 language="typescript"
                 code={`const response = await client.images.generate(

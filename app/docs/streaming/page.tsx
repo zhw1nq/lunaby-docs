@@ -13,7 +13,7 @@ export default function StreamingPage() {
 
             <EndpointBadge method="POST" path="/v1/chat/completions" />
 
-            <h2>Cách 1 — Async Iterator (đơn giản nhất)</h2>
+            <h2>Cách 1 - Async Iterator (đơn giản nhất)</h2>
             <CodeBlock
                 filename="stream-iterator.ts"
                 language="typescript"
@@ -25,7 +25,7 @@ export default function StreamingPage() {
 }`}
             />
 
-            <h2>Cách 2 — Callbacks</h2>
+            <h2>Cách 2 - Callbacks</h2>
             <CodeBlock
                 filename="stream-callbacks.ts"
                 language="typescript"
@@ -49,7 +49,7 @@ await stream.process({
 });`}
             />
 
-            <h2>Cách 3 — Collect toàn bộ</h2>
+            <h2>Cách 3 - Collect toàn bộ</h2>
             <CodeBlock
                 language="typescript"
                 code={`const stream = await client.chat.createStream([

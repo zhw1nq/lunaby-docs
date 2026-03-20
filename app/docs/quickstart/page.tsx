@@ -7,7 +7,7 @@ export default function QuickstartPage() {
             <h1>Quick Start</h1>
             <p>Gửi request đầu tiên tới Lunaby API trong vài phút.</p>
 
-            <h2>Bước 1 — Lấy API Key</h2>
+            <h2>Bước 1 - Lấy API Key</h2>
             <p>
                 Đăng nhập vào{" "}
                 <a href="https://api.lunie.dev" target="_blank" className="text-violet-600 underline">
@@ -16,13 +16,13 @@ export default function QuickstartPage() {
                 → Admin Panel → Tạo API key mới. Key chỉ hiển thị một lần, hãy lưu lại ngay.
             </p>
 
-            <h2>Bước 2 — Cài SDK</h2>
+            <h2>Bước 2 - Cài SDK</h2>
             <CodeBlock code="npm install lunaby-sdk" language="bash" filename="terminal" />
 
-            <h2>Bước 3 — Set API Key</h2>
+            <h2>Bước 3 - Set API Key</h2>
             <CodeBlock code="LUNABY_API_KEY=your_api_key_here" language="bash" filename=".env" />
 
-            <h2>Bước 4 — Gửi request đầu tiên</h2>
+            <h2>Bước 4 - Gửi request đầu tiên</h2>
             <CodeBlock
                 filename="index.ts"
                 language="typescript"
