@@ -1,5 +1,6 @@
 import { DocsSidebar } from "@/components/docs-sidebar";
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 export default function DocsLayout({ children }: { children: React.ReactNode }) {
     return (
@@ -27,9 +28,9 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
                         <Link
                             href="https://api.lunie.dev"
                             target="_blank"
-                            className="text-xs bg-violet-600 hover:bg-violet-700 text-white px-3 py-1.5 rounded-md transition-colors font-medium"
+                            className="flex items-center gap-1.5 text-xs bg-zinc-950 hover:bg-zinc-800 text-zinc-50 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200 px-4 py-1.5 rounded-full transition-colors font-medium shadow-sm"
                         >
-                            Dashboard →
+                            API Dashboard <ArrowUpRight className="size-3.5" />
                         </Link>
                     </div>
                 </div>
