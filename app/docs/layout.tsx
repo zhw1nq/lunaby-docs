@@ -4,7 +4,20 @@ import { ArrowUpRight } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { TableOfContents } from "@/components/toc";
 
-export default function DocsLayout({ children }: { children: React.ReactNode }) {
+export default async function DocsLayout({ children }: { children: React.ReactNode }) {
+    let apiVersion = "1.0";
+    try {
+        const res = await fetch("https://api.lunie.dev", { next: { revalidate: 3600 } });
+        if (res.ok) {
+            const data = await res.json();
+            if (data?.version) {
+                apiVersion = data.version.split(".")[0] + ".0";
+            }
+        }
+    } catch (e) {
+        console.error("Failed to fetch API version:", e);
+    }
+
     return (
         <div className="min-h-screen flex flex-col">
             {/* Top nav */}
@@ -25,7 +38,7 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
                     {/* Right: Actions */}
                     <div className="flex items-center gap-3 absolute right-6">
                         <span className="hidden sm:block text-xs border border-border text-foreground px-2 py-1 rounded-full font-medium">
-                            v1.0
+                            v{apiVersion}
                         </span>
                         <Link
                             href="https://api.lunie.dev"
