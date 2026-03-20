@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "Lunaby API Docs",
     description: "Official developer documentation for Lunaby API",
+    icons: {
+        icon: "https://github.com/lun4by/Lunaby/blob/main/assets/avatar.png?raw=true",
+    },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
