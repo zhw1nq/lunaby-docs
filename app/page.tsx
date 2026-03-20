@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HeroCodeBlock } from "@/components/hero-code-block";
 
 export default function Home() {
     return (
@@ -9,7 +10,7 @@ export default function Home() {
                 </div>
                 <h1 className="text-5xl font-bold tracking-tight">Lunaby API</h1>
                 <p className="text-lg text-muted-foreground">
-                    Developer documentation — Chat completions, image generation,<br />
+                    Developer documentation - Chat completions, image generation,<br />
                     và SDK TypeScript chính thức.
                 </p>
                 <div className="flex items-center gap-3 justify-center pt-2">
@@ -22,10 +23,7 @@ export default function Home() {
                         View Docs
                     </Link>
                 </div>
-                <div className="pt-4 font-mono text-sm bg-muted rounded-lg px-4 py-3 text-left max-w-sm mx-auto">
-                    <span className="text-muted-foreground">$</span>{" "}
-                    <span>npm install lunaby-sdk</span>
-                </div>
+                <HeroCodeBlock />
             </div>
         </div>
     );

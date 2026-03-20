@@ -2,16 +2,16 @@ import { CodeBlock } from "@/components/code-block";
 
 const MODELS = [
     {
-        id: "lunaby-pro",
-        label: "Lunaby Pro",
+        id: "lunaby",
+        label: "Lunaby",
         tag: "Default",
         tagColor: "violet",
         desc: "Model mặc định cho chat tổng quát. Cân bằng tốt giữa tốc độ và chất lượng.",
         useCase: "Chatbot, Q&A, summarization, translation",
     },
     {
-        id: "lunaby-reasoning",
-        label: "Lunaby Reasoning",
+        id: "lunaby-pro",
+        label: "Lunaby Pro",
         tag: "Advanced",
         tagColor: "blue",
         desc: "Model tối ưu cho bài toán phức tạp, lập luận nhiều bước.",
@@ -22,7 +22,7 @@ const MODELS = [
         label: "Lunaby Vision",
         tag: "Image",
         tagColor: "pink",
-        desc: "Model sinh ảnh từ text prompt (stable-image-ultra). Tự động enhance prompt.",
+        desc: "Model sinh ảnh từ text prompt.",
         useCase: "Image generation, creative visuals",
     },
 ];
