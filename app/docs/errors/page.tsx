@@ -70,29 +70,29 @@ try {
 
 } catch (error) {
   if (error instanceof AuthenticationError) {
-    console.error('❌ API key không hợp lệ');
+    console.error('API key không hợp lệ');
     // Kiểm tra lại LUNABY_API_KEY
 
   } else if (error instanceof RateLimitError) {
-    console.error(\`⏳ Rate limited. Thử lại sau \${error.retryAfter}s\`);
+    console.error(\`Rate limited. Thử lại sau \${error.retryAfter}s\`);
 
   } else if (error instanceof TimeoutError) {
-    console.error('⌛ Request timeout - tăng timeout nếu cần');
+    console.error('Request timeout - tăng timeout nếu cần');
 
   } else if (error instanceof ContentFilterError) {
-    console.error('🚫 Nội dung bị lọc:', error.categories);
+    console.error('Nội dung bị lọc:', error.categories);
 
   } else if (error instanceof AbortError) {
-    console.log('✋ Request đã bị hủy');
+    console.log('Request đã bị hủy');
 
   } else if (error instanceof ConnectionError) {
-    console.error('🔌 Không kết nối được server');
+    console.error('Không kết nối được server');
 
   } else if (error instanceof ValidationError) {
-    console.error('⚠️  Input không hợp lệ:', error.message);
+    console.error('Input không hợp lệ:', error.message);
 
   } else if (error instanceof APIError) {
-    console.error(\`🔴 API Error \${error.status}: \${error.message}\`);
+    console.error(\`API Error \${error.status}: \${error.message}\`);
   }
 }`}
             />
